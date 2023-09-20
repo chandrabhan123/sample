@@ -22,6 +22,9 @@ a{
     color: var(--dark);
     text-decoration: none;
 }
+.img{
+    width: 100%;
+}
 .navbar {
     box-shadow: var(--box-shadow);
 }
@@ -123,4 +126,45 @@ padding-bottom: 120px;
     background-position: center;
     background-size: cover;
     min-height: 500px;
+}
+
+.project{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.project .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+     height: 100%;
+     width: 100%;
+    background-color: rgba(21,20,51,0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.project img{
+    transition: all 0.4s ease;
+}
+
+.project:hover .overlay{
+    opacity: 1;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.pricing i{
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.pricing ul li{
+    margin-top: 8px;
 }
