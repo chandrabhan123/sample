@@ -43,6 +43,10 @@ a {
     width: 50px;
 }
 
+.logo{
+    width: 160px;
+}
+
 .navbar .nav-link {
     font-size: 14px;
     font-weight: 700;
@@ -216,4 +220,31 @@ justify-content: center;
     color: var(--primary);
     background-color: transparent;
     border-color: var(--primary);
+}
+
+form input.form-control{
+height: 55px;
+}
+form .form-control{
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-top{
+    padding: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+}
+
+.footer-top a{
+    color: var(--body);
+}
+
+.footer-top a:hover{
+    color: #fff;
+}
+
+.footer-bottom{
+    background-color: #21252f;
 }
