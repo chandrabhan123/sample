@@ -1,48 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-:root{
+:root {
     --primary: #0d6efd;
---dark: #21252f;
---body: #888;
---box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
 
 }
-body{
+
+body {
     font-family: Sora, "sans-serif";
     line-height: 1.7;
     color: var(--body);
 }
 
 
-h1,h2,h3,h4,h5,h6,.display-4{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
     color: var(--dark);
     font-weight: 700;
 }
-a{
+
+a {
     color: var(--dark);
     text-decoration: none;
 }
-.img{
+
+.img {
     width: 100%;
 }
+
 .navbar {
     box-shadow: var(--box-shadow);
 }
-.navbar .logo{
-width: 50px;
+
+.navbar .logo {
+    width: 50px;
 }
 
-.navbar .nav-link{
+.navbar .nav-link {
     font-size: 14px;
     font-weight: 700;
 }
-.btn{
+
+.btn {
     padding: 14px 18px;
     border-width: 2px;
     border-radius: 0;
 
 }
-.hero{
+
+.hero {
     background-image: url(../imgs/bg-img.jpg);
     background-position: center;
     background-size: cover;
@@ -51,33 +64,35 @@ width: 50px;
     z-index: 2;
 }
 
-.hero ::after{
+.hero ::after {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(21,20,51,0.8);
+    background-color: rgba(21, 20, 51, 0.8);
     z-index: -1;
 }
 
 section {
-padding-top: 120px;
-padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.card-effect{
+.card-effect {
     box-shadow: var(--box-shadow);
     background-color: #fff;
     padding: 25px;
     transition: all 0.35s ease;
 }
-.card-effect:hover{
+
+.card-effect:hover {
     box-shadow: none;
     transform: translateY(5px);
 }
-.iconbox{
+
+.iconbox {
     width: 54px;
     height: 54px;
     display: flex;
@@ -89,12 +104,14 @@ padding-bottom: 120px;
     border-radius: 100px;
     flex: none;
 }
-.service{
+
+.service {
     position: relative;
     z-index: 2;
     overflow: hidden;
 }
-.service::after{
+
+.service::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -107,40 +124,41 @@ padding-bottom: 120px;
     transition: all 0.5s ease;
 }
 
-.service:hover .iconbox{
+.service:hover .iconbox {
     background-color: #fff;
     color: var(--primary);
 }
 
 .service:hover h5,
-.service:hover p{
+.service:hover p {
     color: #fff;
 }
-.service:hover::after{
+
+.service:hover::after {
     opacity: 1;
     top: 0;
 }
 
-.col-img{
+.col-img {
     background-image: url(/imgs/2.jpg);
     background-position: center;
     background-size: cover;
     min-height: 500px;
 }
 
-.project{
+.project {
     position: relative;
     overflow: hidden;
 
 }
 
-.project .overlay{
+.project .overlay {
     position: absolute;
     top: 0;
     left: 0;
-     height: 100%;
-     width: 100%;
-    background-color: rgba(21,20,51,0.8);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
     padding: 30px;
     display: flex;
     align-items: flex-end;
@@ -148,11 +166,11 @@ padding-bottom: 120px;
     opacity: 0;
 }
 
-.project img{
+.project img {
     transition: all 0.4s ease;
 }
 
-.project:hover .overlay{
+.project:hover .overlay {
     opacity: 1;
 }
 
@@ -160,11 +178,42 @@ padding-bottom: 120px;
     transform: scale(1.1);
 }
 
-.pricing i{
+.pricing i {
     font-size: 20px;
     color: var(--primary);
 }
 
-.pricing ul li{
+.pricing ul li {
     margin-top: 8px;
+}
+.team-member img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+  
+}
+.social-icons {
+    display: flex;
+justify-content: center;
+}
+
+.social-icons a{
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
 }
